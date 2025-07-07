@@ -1,0 +1,40 @@
+7/7/2025
+OBJECT ORIENTED PROGRAMING CONCEPTS:
+1.Inheritence : allowing to inherit all attributes and methods of super/parent class to child/subclass
+-adding new features /overriding the existing feature
+-super():uplifting the values /features to parent class or automatically called by the constructor
+-implementation of is_a relationship
+
+popo-play in old python obj
+pojo-play in old jawa obj
+
+2.Polymorphism- note: there is no static polymorphism in python
+ note:no compiletime in python so no static polymorphis (function over overloading)(only runtime)
+
+3.Abstraction: it hides the actual implementation to give the user a proper interface for easier usage by user.
+ 
+4.Encapsulation: binding of data inside the class( operate on that data into a single unit)
+(when we encapsulate we get abstraction)
+
+when a function is called:
+-prologue
+-business logic
+-epilogue
+
+*Static member:
+class Cubical:
+    str printer
+    def __init__(self):
+        chair
+        mug
+        computer
+        drawer
+
+    @static
+    def get_printer(cls):
+        return printer
+
+Tree:
+Tree is a DS
+Non Linear ds
+ACYCLIC DS(all paths in a DS are unique)
