@@ -1,0 +1,10 @@
+choice=0
+menu={1:'icecream',2:'cake',3:'panipuri',4:'kurkure',5:'end of menu'
+}
+while True:
+    print("1:icecream,2:cake,3:panipuri,4:kurkure")
+    choice=int(input("enter your choice:"))
+    string=menu.get(choice,"invalid choice")
+    print(string)
+    if choice==5:
+        break
