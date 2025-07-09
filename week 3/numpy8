@@ -1,0 +1,4 @@
+import numpy as np
+#method chaining
+arr = np.arange(1, 11).reshape(5, -1) # Here python infers/decides the number of columns by itself.
+print(arr)

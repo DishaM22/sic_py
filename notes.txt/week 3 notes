@@ -38,3 +38,18 @@ Tree:
 Tree is a DS
 Non Linear ds
 ACYCLIC DS(all paths in a DS are unique)
+
+
+9/7/25
+
+PDB:Python debugger
+debugging is the skill of tracing the logic.
+
+command to run a python script(program)in debug mode:(cmd)
+#python -m pdb -your_script_name.py
+
+or in code:
+import pdb
+pdb.set_trace()
+
+#help (shortcut commands list)
