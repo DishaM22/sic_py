@@ -5,8 +5,6 @@ def precedence(op):
         return 2
     if op=='^' or op=='% ':
         return 3
-    if op=='( ' or op==')':
-        return 4
     return 0
 
 def apply_op(a,b,op):
@@ -17,25 +15,24 @@ def apply_op(a,b,op):
     if op=='*':
         return a*b
     if op=='/':
-        return a/b
+        return a//b
     if op=='^':
         return a**b
     if op=='%':
         return a%b
-    
-def evaluate(expr):  
-    values=[]
-    opr=[]
-    i=0
 
-    while i<len(expr):
-        if expr[i]==' ':
-            i+=1
-            continue
-        elif expr[i]. isdigit():
-            val=0
-            if expr[i]<len(expr) and expr[i].isdigit():
-                val=
+def postfix_evaluation(expr):
+    stack=[]
+    expr=expr.split()
+    for i in expr:
+        if i.isdigit():
+            stack.append(int(i))
+        else:
+            a=stack.pop()
+            b=stack.pop()
+            result=apply_op(a,b,i)
+            stack.append(result)
+    return stack[-1]
 
-
-    
+expr="4 5 6 + *"
+print("Result:",postfix_evaluation(expr))
