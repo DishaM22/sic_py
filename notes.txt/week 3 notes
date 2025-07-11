@@ -53,3 +53,14 @@ import pdb
 pdb.set_trace()
 
 #help (shortcut commands list)
+
+
+10/7/25
+
+Recursion:a function that calls itself ,either directly or indirectly .
+types: direct.r,indirect.r,tail.r(the recursion call is the last call in the function)
+
+Backtracking: a general algorithemic technique for solving problems incrementally.
+   
+lambda and regix:is used to extract all digit sequences (numbers) from each element in a list called data.
+

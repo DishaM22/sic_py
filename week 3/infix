@@ -1,0 +1,41 @@
+def precedence(op):
+    if op=='+' or op=='-' :
+        return 1
+    if op=='*' or op=='/':
+        return 2
+    if op=='^' or op=='% ':
+        return 3
+    if op=='( ' or op==')':
+        return 4
+    return 0
+
+def apply_op(a,b,op):
+    if op=='+':
+        return a+b
+    if op=='-':
+        return a-b
+    if op=='*':
+        return a*b
+    if op=='/':
+        return a/b
+    if op=='^':
+        return a**b
+    if op=='%':
+        return a%b
+    
+def evaluate(expr):  
+    values=[]
+    opr=[]
+    i=0
+
+    while i<len(expr):
+        if expr[i]==' ':
+            i+=1
+            continue
+        elif expr[i]. isdigit():
+            val=0
+            if expr[i]<len(expr) and expr[i].isdigit():
+                val=
+
+
+    

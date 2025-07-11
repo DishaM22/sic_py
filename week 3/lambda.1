@@ -1,0 +1,4 @@
+import re
+data = ["abc123", "hello2024", "no digits", "zip007"]
+digits = list(map(lambda s: re.findall(r'\d+', s), data))
+print(digits)  
